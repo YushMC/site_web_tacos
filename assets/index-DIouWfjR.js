@@ -1,6 +1,6 @@
 function __vite__mapDeps(indexes) {
   if (!__vite__mapDeps.viteFileDeps) {
-    __vite__mapDeps.viteFileDeps = ["assets/InicioView-CfbimJxB.js","assets/InicioView-RL6jmNIC.css"]
+    __vite__mapDeps.viteFileDeps = ["InicioView-CfbimJxB.js","InicioView-RL6jmNIC.css"]
   }
   return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
 }

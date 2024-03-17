@@ -9,7 +9,7 @@ import { RouterLink } from 'vue-router';
             <nav>
                 <ul>
                     <!-- <li><a href="">Inicio</a></li> -->
-                    <li><router-link to="/">Productos</router-link></li>
+                    <li><router-link to="/products">Productos</router-link></li>
                     <li><router-link to="/about">+ Información</router-link></li>
                     <li><a href="#modal">Color</a></li>
                 </ul>

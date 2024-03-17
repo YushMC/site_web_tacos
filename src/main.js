@@ -8,7 +8,6 @@ import './css/sections.css'
 import './css/modal.css'
 import App from './App.vue'
 
-
 const routes =  [
     {
         path: '/',
@@ -16,15 +15,16 @@ const routes =  [
         component: () => import('./views/InicioView.vue')
     },
     {
-        path: '/about',
-        name:'about',
-        component: () => import('./views/InicioView.vue')
+        path: '/products',
+        name:'products',
+        component: () => import('./views/ProductsView.vue')
     }
 ]
 const router = createRouter({
     history: createWebHistory(),
     routes
 });
+
 
 router.beforeEach((to, from, next) => {
     AOS.init(); // Initialize AOS

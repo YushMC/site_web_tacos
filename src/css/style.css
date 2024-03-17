@@ -3,7 +3,7 @@
   --background: url("../assets/img/30048943-desayuno-comida-patrón-de-papel-tapiz-de-fondo.jpg");
   --text: #000;
   --text-sobre: #fff;
-  --enfasis:#e726ee;
+  --enfasis:rgb(128, 63, 3);
   --enfasis_transparente:#e726ee86;
   --color_header : rgba(192, 97, 7, 0.74);
   
@@ -14,7 +14,7 @@
   --background:url("../assets/img/Lawrencium.png");
   --text: #fff;
   --text-sobre: #000;
-  --enfasis:#a610ac;
+  --enfasis:rgb(128, 63, 3);
   --enfasis_transparente: #a710ac86;
   --color_header : #2e2e2e;
 }

@@ -1,5 +1,5 @@
 <template>
-    <div class="portada">
+        <div class="portada">
         <div class="difuminado_fondo">
             <div class="contenedor_portada"  data-aos="fade-down" data-aos-duration="1000">
                 <div class="contenedor_portada_secciones">
@@ -11,9 +11,9 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
 
-    <main>
+        <main>
         <section class="section_parallax">
             <div class="blur_section">
                 <div class="content_section" data-aos="fade-down" data-aos-duration="1000">
@@ -64,13 +64,15 @@
         <section>
 
         </section>
-    </main>
+        </main>
 </template>
 
 <script setup>
+    document.title = "Tacos Toño - Inicio";
 </script>
-
+    
 <style scoped>
+
 .portada{
     width: 100%;
     height: 700px;

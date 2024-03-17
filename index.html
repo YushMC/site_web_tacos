@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -7,7 +7,78 @@
     <title>Vite + Vue</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="container-alll-modal" id="modal">
+      <div class="popup">
+          <div class="img">
+          </div>
+          <div class="container-text">
+              
+              <h3>Selecciona un color</h3>
+              <!-- 
+              <p>
+                  Solo da click en las imagenes!  
+              </p>
+              <div class="chibis">
+                  <div class="color">
+                      <button id="color-verde" onclick="colorSeleccionado('Monika')" ><img src="https://www.dokidokispanish.club/assets/chibis/m_sticker_1.png"></button>
+                  </div>
+                  <div class="color">
+                      <button id="color-rosa" onclick="colorSeleccionado('Natsuki')" ><img src="https://www.dokidokispanish.club/assets/chibis/n_sticker_1.png"></button>
+                  </div>
+                  <div class="color">
+                      <button id="color-azul" onclick="colorSeleccionado('Sayori')" ><img src="https://www.dokidokispanish.club/assets/chibis/s_sticker_1.png"></button>
+                  </div>
+                  <div class="color">
+                      <button id="color-morado" onclick="colorSeleccionado('Yuri')" ><img src="https://www.dokidokispanish.club/assets/chibis/y_sticker_1.png"></button>
+                  </div>
+                  
+              </div>
+              -->
+              <div class="modo-oscuro">
+                  <p>
+                  Selecciona el color de fondo 
+                  <br>
+                  <label class="switch-modos">
+                      <input type="checkbox" id="swicth-mode" >
+                      <span class="slider1"></span>
+                  </label>
+              </p>
+              </div>
+          </div>
+          <a href="#" class="btn-close-popup">X</a>
+      </div>
+  </div>
+    <div id="app">
+      
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
+  <script>
+    window.addEventListener("scroll",function(){
+      const header = document.querySelector("header");
+      header.classList.toggle("abajo_scroll",window.scrollY>0);
+    });
+  </script>
+  <script>
+    const preferedColorScheme =  'light';
+    const btnSwitch = document.querySelector('#swicth-mode');
+    //const btndescargar = document.querySelector("#Codigo_descarga");
+
+    const setTheme = (theme) => {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+
+    }
+
+    btnSwitch.addEventListener('click', ()  => {
+        let switchToTheme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
+        setTheme(switchToTheme);
+    });
+
+    setTheme(localStorage.getItem('theme') || preferedColorScheme);
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

@@ -1,0 +1,23 @@
+.section_parallax{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--background);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.blur_section{
+    width: 100%;
+    backdrop-filter: blur(0.15em) !important;
+}
+.content_section{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5% auto;
+}

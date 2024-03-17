@@ -2,15 +2,17 @@
 import {RouterView } from 'vue-router';
 import Header from './components/Header.vue';
 import BotonFlotante from './components/BotonFlotante.vue';
-import { ref, onMounted } from 'vue'
-
-
+import Footer from './components/Footer.vue';
+import Comments from './components/Comments.vue';
 </script>
 
 <template>
   <Header></Header>
-  <RouterView></RouterView>
+  <RouterView>
+  </RouterView>
+  <Comments></Comments>
   <BotonFlotante></BotonFlotante>
+  <Footer></Footer>
 </template>
 
 <style scoped>

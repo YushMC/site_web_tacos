@@ -2,6 +2,7 @@
     <div class="container-buttons-float">
         <input type="checkbox" name="" id="btn-mas" style="cursor: pointer;">
        <div class="funciones">
+            <a href="#modal"><i class="fa-solid fa-brush"></i></a>
             <a href="https://www.facebook.com" title="Página Oficial en Facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             <a href="#" title="Chat de Whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="#" title="Télefono" target="_blank"><i class="fa-solid fa-phone"></i></a>

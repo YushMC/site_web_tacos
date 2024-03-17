@@ -11,11 +11,12 @@ import { RouterLink } from 'vue-router';
                     <!-- <li><a href="">Inicio</a></li> -->
                     <li><router-link to="/products">Productos</router-link></li>
                     <li><router-link to="/about">+ Información</router-link></li>
-                    <li><a href="#modal">Color</a></li>
+                    <!-- <li><i title="Buscador" class="fa-solid fa-magnifying-glass" id="icon-search" style="cursor:pointer;"></i></li> -->
                 </ul>
             </nav>
         </div>
     </header>
+    
 </template>
 
 <style scoped>
@@ -86,4 +87,5 @@ nav ul li:hover a{
     color: #fff;
     
 }
+
 </style>

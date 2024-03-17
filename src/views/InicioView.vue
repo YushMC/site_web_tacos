@@ -57,17 +57,16 @@
                             </div>
                         </div>
                     </div>
+
+                    <Comments></Comments>
                 </div>
             </div>
-        </section>
-
-        <section>
-
         </section>
         </main>
 </template>
 
 <script setup>
+    
     document.title = "Tacos Toño - Inicio";
 </script>
     
@@ -144,4 +143,5 @@
         text-align: center;
     }
 }
+
 </style>

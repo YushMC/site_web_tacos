@@ -4,7 +4,7 @@
   --text: #000;
   --text-sobre: #fff;
   --enfasis:rgb(128, 63, 3);
-  --enfasis_transparente:#e726ee86;
+  --enfasis_transparente:rgba(187, 101, 21,0.8);
   --color_header : rgba(192, 97, 7, 0.74);
   
 }
@@ -14,8 +14,8 @@
   --background:url("../assets/img/Lawrencium.png");
   --text: #fff;
   --text-sobre: #000;
-  --enfasis:rgb(128, 63, 3);
-  --enfasis_transparente: #a710ac86;
+  --enfasis:rgba(128, 63, 3,0.8);
+  --enfasis_transparente: rgba(185, 94, 9,1);
   --color_header : #2e2e2e;
 }
 

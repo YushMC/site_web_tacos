@@ -10,11 +10,12 @@ import Footer from './components/Footer.vue';
 
 <template>
   <Header></Header>
+  <!-- 
   <transition name="view" mode="out-in">
     <router-view></router-view>
   </transition>
-  
-  
+  -->
+  <router-view></router-view>
   <BotonFlotante></BotonFlotante>
   <Footer></Footer>
 </template>

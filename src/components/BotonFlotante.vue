@@ -3,9 +3,9 @@
         <input type="checkbox" name="" id="btn-mas" style="cursor: pointer;">
        <div class="funciones">
             <a href="#modal"><i class="fa-solid fa-brush"></i></a>
-            <a href="https://www.facebook.com" title="Página Oficial en Facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" title="Chat de Whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            <a  title="Télefono" @click="copiarContenido"><i class="fa-solid fa-phone"></i></a>
+            <a @click="irA(urlFacebook,facebook)" title="Página Oficial en Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a @click="irA(urlWhatsapp,whatsapp)" title="Chat de Whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a title="Télefono" @click="copiarContenido"><i class="fa-solid fa-phone"></i></a>
             <a href="#" title="Correo Electrónico" target="_blank"><i class="fa-solid fa-envelope"></i></a>
         </div>
        <div class="btn-mas" style="cursor: pointer;">
@@ -35,6 +35,33 @@ async function copiarContenido() {
     });
     /* Rechazado - fallo al copiar el texto al portapapeles */
   }
+}
+
+const facebook = "nuestra página en Facebook";
+const urlFacebook = "https://web.facebook.com/profile.php?id=61557260492467&mibextid=ZbWKwL&_rdc=1&_rdr";
+const whatsapp = "nuestro chat de Whatsapp";
+const urlWhatsapp = "https://www.whatsapp.com/";
+
+function irA(link,text){
+    Swal.fire({
+      title: "Redirigiendo",
+      text: "Estás a punto de salir de nuestro sitio web con destino a "+text,
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      cancelButtonText: "Cancelar",
+      confirmButtonText: "Continuar"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Redirigiendo",
+          text: "Serás rederigido en una nueva pestaña",
+          icon: "success"
+        });
+        window.open(link, '_blank');
+      }
+    });
 }
 </script>
 

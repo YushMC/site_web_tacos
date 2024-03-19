@@ -14,7 +14,7 @@
                     </ul></p>
                     
                     <h3 class="subitulos" style="margin-top: 2%;"><i class="fa-solid fa-location-dot"></i> Ubicación</h3>
-                    <p class="parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, blanditiis!</p>
+                    <p class="parrafo">Calle 5 de mayo #112<br>Colonia Zona Centro<br>Valle de Santiago, Guanajuato</p>
                 </div>
                 <div class="section_footer">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d934.9314539956736!2d-101.1865340150556!3d20.39419180453759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842c8d0b11ff134d%3A0x85017422fdab10a0!2s5%20de%20Mayo%20112%2C%20Centro%2C%2038400%20Valle%20de%20Santiago%2C%20Gto.!5e0!3m2!1ses!2smx!4v1710790353145!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -38,7 +38,7 @@
         display: flex;
         overflow: hidden;
         background: var(--color_header);
-        backdrop-filter: blur(0.2rem);
+        backdrop-filter: blur(0.5rem);
         user-select: none;
     }
     .subitulos{
@@ -91,6 +91,7 @@
         width: 100%;
         height: 200px;
         border-radius: 10px;
+        outline: none;
     }
     .content_footer .section_footer img{
         width: 100px;

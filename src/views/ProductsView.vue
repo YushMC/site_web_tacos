@@ -17,25 +17,25 @@
                     :spaceBetween="23"
                      >
                     <swiper-slide>
-                        <router-link to="/tacos" ><img src="https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg" alt=""></router-link>
+                        <router-link to="/tacos" ><img src="https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg" alt="Tacos Imagen"></router-link>
                     </swiper-slide>
                     <swiper-slide >
-                        <router-link to="/tacos" ><img src="https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg" alt=""></router-link>
+                        <router-link to="/tacos" ><img src="https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg" alt="Tacos Imagen"></router-link>
                     </swiper-slide>
                     <swiper-slide >
-                        <router-link to="/tacos" ><img src="https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg" alt=""></router-link>
+                        <router-link to="/tacos" ><img src="https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg" alt="Tacos Imagen"></router-link>
                     </swiper-slide>
                     <swiper-slide >    
-                        <router-link to="/tacos"><img src="https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg" alt=""></router-link>
+                        <router-link to="/tacos"><img src="https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg" alt="Tacos Imagen"></router-link>
                     </swiper-slide>
                     <swiper-slide >
-                        <router-link to="/tacos"><img src="https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg" alt=""></router-link>
+                        <router-link to="/tacos"><img src="https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg" alt="Tacos Imagen"></router-link>
                     </swiper-slide>   
                     <swiper-slide >
-                        <router-link to="/tacos"><img src="https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg" alt=""></router-link>
+                        <router-link to="/tacos"><img src="https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg" alt="Tacos Imagen"></router-link>
                     </swiper-slide>
                     <swiper-slide >
-                        <router-link to="/tacos" ><img src="https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg" alt=""></router-link>
+                        <router-link to="/tacos" ><img src="https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg" alt="Tacos Imagen"></router-link>
                     </swiper-slide>
                     
                 </swiper>

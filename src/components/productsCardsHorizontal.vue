@@ -2,7 +2,7 @@
     <div class="horizontal_cards_content">
         <div class="horizontal_card" data-aos="fade-down" data-aos-duration="1000" v-for="todo in products" :key="todo.id" >
             <div class="img_content">
-                <img :src="todo.img">
+                <img :src="todo.img" :alt="todo.name + ' Imagen'">
             </div>
             <div class="info_content">
                 <h4 class="titulos">{{todo.name}}</h4>

@@ -1,5 +1,11 @@
 import { createApp } from 'vue'
+import VueSweetalert2 from 'vue-sweetalert2';
+import InicioView from './views/InicioView.vue';
+import ProductsView from './views/ProductsView.vue';
+import { Swiper } from 'swiper/vue';
 import {createRouter, createWebHistory } from 'vue-router'
+import 'sweetalert2/dist/sweetalert2.min.css';
+
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import './css/style.css'
@@ -12,20 +18,24 @@ const routes =  [
     {
         path: '/',
         name: 'home',
-        component: () => import('./views/InicioView.vue')
+        component: InicioView
     },
     {
         path: '/products',
         name:'products',
-        component: () => import('./views/ProductsView.vue')
+        component: ProductsView
     }
 ]
 const router = createRouter({
     history: createWebHistory(),
     routes
 });
-
-
+/*
+,
+    scrollBehavior() {
+        return { top: 0, left: 0 }
+      }
+*/
 router.beforeEach((to, from, next) => {
     AOS.init(); // Initialize AOS
     next();
@@ -34,5 +44,7 @@ router.beforeEach((to, from, next) => {
 const app = createApp(App)
 app.use(router)
 app.use(AOS)
+app.use(Swiper)
+app.use(VueSweetalert2)
 app.mount('#app')
 

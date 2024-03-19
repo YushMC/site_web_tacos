@@ -1,5 +1,6 @@
 <script setup>
-import { RouterLink } from 'vue-router';
+import { RouterLink} from 'vue-router';
+
 </script>
 
 <template>
@@ -72,6 +73,9 @@ nav ul li{
     
 }
 nav ul li:hover{
+    background-color: #000;
+}
+.selected{
     background-color: #000;
 }
 nav ul li a{

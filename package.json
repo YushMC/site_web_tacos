@@ -11,8 +11,14 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "nodemailer": "^6.9.12",
+    "sweetalert2": "^11.10.6",
+    "swiper": "^11.0.7",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "vue-sweetalert2": "^5.0.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",

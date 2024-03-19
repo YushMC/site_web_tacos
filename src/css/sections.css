@@ -4,10 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: var(--background);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
 }
 .blur_section{
     width: 100%;

@@ -5,7 +5,7 @@
             <a href="#modal"><i class="fa-solid fa-brush"></i></a>
             <a href="https://www.facebook.com" title="Página Oficial en Facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             <a href="#" title="Chat de Whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#" title="Télefono" target="_blank"><i class="fa-solid fa-phone"></i></a>
+            <a  title="Télefono" @click="copiarContenido"><i class="fa-solid fa-phone"></i></a>
             <a href="#" title="Correo Electrónico" target="_blank"><i class="fa-solid fa-envelope"></i></a>
         </div>
        <div class="btn-mas" style="cursor: pointer;">
@@ -15,7 +15,27 @@
 </template>
 
 <script setup>
-
+import Swal from 'sweetalert2'
+const telefono = "4641384565";
+async function copiarContenido() {
+  try {
+    await navigator.clipboard.writeText(telefono);
+    Swal.fire({
+        position: 'center',
+        icon: "success",
+        title: "Número Telefónico copiado al portapapeles"
+    });
+    /* Resuelto - texto copiado al portapapeles con éxito */
+  } catch (err) {
+    Swal.fire({
+        position: 'center',
+        icon: "error",
+        title: "ERROR",
+        text: "Ocurrio un error al copiar" + err,
+    });
+    /* Rechazado - fallo al copiar el texto al portapapeles */
+  }
+}
 </script>
 
 <style scoped>

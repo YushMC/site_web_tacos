@@ -29,4 +29,9 @@
     padding: 2%;
     box-shadow: 10px 5px 20px 5px rgba(7, 7, 7, 0.541);
 }
+@media screen and (max-width:600px) {
+    .comentarios{
+        width: 100%;
+    }
+}
 </style>

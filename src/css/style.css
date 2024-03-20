@@ -1,6 +1,6 @@
 [data-theme="light"] {
   --primary: #ececec;
-  --background: url("../assets/img/30048943-desayuno-comida-patrón-de-papel-tapiz-de-fondo.jpg");
+  --background: url("../assets/img/Background80_.png");
   --text: #000;
   --text-sobre: #fff;
   --enfasis:rgb(128, 63, 3);
@@ -11,7 +11,7 @@
 
 [data-theme="dark"] {
   --primary: #3b3b3b;
-  --background:url("../assets/img/Lawrencium.png");
+  --background:url("../assets/img/Black_1_1.png");
   --text: #fff;
   --text-sobre: #000;
   --enfasis:rgba(128, 63, 3,0.8);
@@ -87,6 +87,9 @@ main{
   font-style: normal;
   text-transform: uppercase;
   font-size: 2em;
+  text-shadow: 2px 5px 10px black;
+}
+section .titulos{
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.26);
 }
 .subitulos{

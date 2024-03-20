@@ -9,9 +9,8 @@ import { RouterLink} from 'vue-router';
             <h1 class="titulos"><router-link to="/" style="color: #fff;">Tacos Toño</router-link></h1>
             <nav>
                 <ul>
-                    <!-- <li><a href="">Inicio</a></li> -->
-                    <li><router-link to="/products">Productos</router-link></li>
-                    <li><router-link to="/about">+ Información</router-link></li>
+                    <li><router-link to="/"><i class="fa-solid fa-house"></i> Inicio</router-link></li>
+                    <li><router-link to="/products"><i class="fa-solid fa-shop"></i> Productos</router-link></li>
                     <!-- <li><i title="Buscador" class="fa-solid fa-magnifying-glass" id="icon-search" style="cursor:pointer;"></i></li> -->
                 </ul>
             </nav>

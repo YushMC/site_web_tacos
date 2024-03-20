@@ -1,27 +1,30 @@
 <template>
     <div class="horizontal_cards_content">
         <div class="horizontal_card" data-aos="fade-down" data-aos-duration="1000" v-for="todo in products" :key="todo.id" >
-            <div class="img_content">
-                <img :src="todo.img" :alt="todo.name + ' Imagen'">
-            </div>
-            <div class="info_content">
-                <h4 class="titulos">{{todo.name}}</h4>
-                <p class="parrafo">{{todo.description}}</p>
-                <hr>
-                <div class="content_ingredient_card" v-if=" todo.name != 'Hamburguesas' ">
-                    <span>{{ todo.ingredient.carne_1}}</span>
-                    <span>{{ todo.ingredient.carne_2}}</span>
-                    <span>{{ todo.ingredient.carne_3}}</span>
-                    <span>{{ todo.ingredient.carne_4}}</span>
-                    <span>{{ todo.ingredient.carne_5}}</span>
+            <router-link :to="todo.link">
+                <div class="img_content">
+                    <img :src="todo.img" :alt="todo.name + ' Imagen'">
                 </div>
-                <h5>{{todo.price}}</h5>
-            </div>
+                <div class="info_content">
+                    <h4 class="titulos">{{todo.name}}</h4>
+                    <p class="parrafo">{{todo.description}}</p>
+                    <hr>
+                    <div class="content_ingredient_card" v-if=" todo.name != 'Hamburguesas' ">
+                        <span>{{ todo.ingredient.carne_1}}</span>
+                        <span>{{ todo.ingredient.carne_2}}</span>
+                        <span>{{ todo.ingredient.carne_3}}</span>
+                        <span>{{ todo.ingredient.carne_4}}</span>
+                        <span>{{ todo.ingredient.carne_5}}</span>
+                    </div>
+                    <h5>{{todo.price}}</h5>
+                </div>
+            </router-link>
         </div>
     </div>
 </template>
 
 <script setup>
+import { RouterLink } from 'vue-router'; 
 import { ref } from 'vue';
 let id=0;
 const products = ref([ 
@@ -39,7 +42,8 @@ const products = ref([
             carne_5: "Chorizo"
         },
         price:"$7 MXN c/u y ordenes apartir de $50 MXN",
-        img:"https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg?w=1920&h=1280&fl=progressive&q=50&fm=jpg"
+        img:"https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg?w=1920&h=1280&fl=progressive&q=50&fm=jpg",
+        link:"/tacos"
     },
     {
     id:id++,
@@ -54,7 +58,8 @@ const products = ref([
             carne_5: "Chorizo"
         },
         price:"$30 MXN",
-        img:"https://www.maricruzavalos.com/wp-content/uploads/2023/04/torta-de-chorizo-recipe-500x375.jpg"
+        img:"https://www.maricruzavalos.com/wp-content/uploads/2023/04/torta-de-chorizo-recipe-500x375.jpg",
+        link:"/tortas"
     },
     {
     id:id++,
@@ -69,14 +74,16 @@ const products = ref([
             carne_5: "Chorizo"
         },
         price:"$15 MXN c/u",
-        img:"https://i0.wp.com/lopezdoriga.com/wp-content/uploads/2017/08/gringaalpastor-e1503699292532.jpg"
+        img:"https://i0.wp.com/lopezdoriga.com/wp-content/uploads/2017/08/gringaalpastor-e1503699292532.jpg",
+        link:"/quesadillas"
     },
     {
     id:id++,
         name:'Hamburguesas',
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, assumenda accusamus. Earum architecto eaque esse! Blanditiis, rem minus. Ipsam facilis nostrum tempora similique maiores nihil dolorum quasi ratione, ad inventore?",
         price:"$30 mxn",
-        img:"https://images.aws.nestle.recipes/resized/8689e8d974203563ddcc9bbff91323c2_MG_CHORIZOBURGER_Main-880x660_1080_850.png"
+        img:"https://images.aws.nestle.recipes/resized/8689e8d974203563ddcc9bbff91323c2_MG_CHORIZOBURGER_Main-880x660_1080_850.png",
+        link:"/hamburguesas"
     },
     ]);
 
@@ -84,6 +91,16 @@ const products = ref([
 </script>
 
 <style  scoped>
+a{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2%;
+    padding: 2%;
+}
+a .titulos{
+    color:#000;
+}
 img{
     border-radius: 10px;
 }

@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import VueSweetalert2 from 'vue-sweetalert2';
 import InicioView from './views/InicioView.vue';
 import ProductsView from './views/ProductsView.vue';
+import TacosView from './views/TacosView.vue';
 import { Swiper } from 'swiper/vue';
 import {createRouter, createWebHistory } from 'vue-router'
 import 'sweetalert2/dist/sweetalert2.min.css';
@@ -24,6 +25,12 @@ const routes =  [
         path: '/products',
         name:'products',
         component: ProductsView
+    }
+    ,
+    {
+        path: '/tacos',
+        name:'tacos',
+        component: TacosView
     }
 ]
 const router = createRouter({

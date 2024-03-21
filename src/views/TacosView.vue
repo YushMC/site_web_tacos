@@ -11,8 +11,16 @@
                 
 
                 <div class="content_section" data-aos="fade-down" data-aos-duration="1000">
-                    <h2 class="titulos enfasis titulo_seccion">Todos nuestros tacos</h2>
-                    <h3 class="subtitulo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, voluptatum?</h3>
+                    <h2 class="titulos enfasis titulo_seccion">Tacos</h2>
+                    <h3 class="subtitulo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, voluptatum?</h3> 
+                    <h4>Carnes</h4>
+                    <ul>
+                        <li>Tripa</li>
+                        <li>Cabeza</li>
+                        <li>Masiza</li>
+                        <li>Pastor</li>
+                        <li>Chorizo</li>
+                    </ul>
                     <swiper-container >
                         <swiper
                         :pagination="true"
@@ -121,6 +129,21 @@ const modules =  [Pagination, Autoplay];
     border-radius: 20px;
     border: 4px solid var(--enfasis_transparente);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+h4{
+    margin:2% 0%;
+    color:var(--enfasis);
+    font-weight: 700;
+    font-size: 1.6em;
+}
+ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+li{
+    padding: 2%;
+    margin: 2%;
 }
 @media screen and (max-width:600px) {
     .swiper{

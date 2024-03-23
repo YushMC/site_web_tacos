@@ -12,7 +12,11 @@
 
                 <div class="content_section" data-aos="fade-down" data-aos-duration="1000">
                     <h2 class="titulos enfasis titulo_seccion">Tacos</h2>
-                    <h3 class="subtitulo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, voluptatum?</h3> 
+                    <h3 class="subtitulo">¿Qué incluye?</h3> 
+                    <ul>
+                        <li>Cebolla</li>
+                        <li>Cilantro</li>
+                    </ul>
                     <h4>Carnes</h4>
                     <ul>
                         <li>Tripa</li>
@@ -57,6 +61,9 @@
 
                         </swiper>
                     </swiper-container>
+                    <h4>
+                        Precio: $7.00 MXN
+                    </h4>
                 </div>
             </div>
         </section>

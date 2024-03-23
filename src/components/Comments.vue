@@ -4,7 +4,7 @@
             <div class="content_section" data-aos="fade-down" data-aos-duration="1000">
                 <div class="comentarios">
                     <h2 class="titulos">Comentarios y Opiniones</h2>
-                    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-order-by="reverse_time" data-numposts="5"></div>
+                    <div class="fb-comments" data-href="https://tacostono.000webhostapp.com/inicio" data-width="100%" data-order-by="reverse_time" data-numposts="5"></div>
                 </div>
             </div>
         </div>

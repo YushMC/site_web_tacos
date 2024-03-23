@@ -3,7 +3,7 @@
         <div class="content_footer">
             <section class="sections_footer">
                 <div class="section_footer">
-                    <img src="../assets/431758661_122101438940242016_2417711652323493930_n.ico" alt="">
+                    <img src="../../public/icono.ico" alt="">
                     <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, obcaecati tempore natus perferendis iure blanditiis modi magnam nostrum ab culpa?</p>
                 </div>
                 <div class="section_footer">

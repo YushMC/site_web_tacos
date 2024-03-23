@@ -4,37 +4,37 @@
         "id" :"1",
         "name": "Tacos de Chorizo",
         "price": "$7 MXN",
-        "img":"https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg?w=1920&h=1280&fl=progressive&q=50&fm=jpg"
+        "img":"./platillos/chorizo.webp"
     },
     {
         "id" :"2",
-        "name": "Tacos de Bistec",
+        "name": "Tacos de Bisteck",
         "price": "$7 MXN",
-        "img":"https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg"
+        "img":"./platillos/bisteck.webp"
     },
     {
         "id" :"3",
         "name": "Tacos de Pastor",
         "price": "$7 MXN",
-        "img":"https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg"
+        "img":"./platillos/pastor.webp"
     },
     {
         "id" :"4",
         "name": "Tacos de Cabeza",
         "price": "$7 MXN",
-        "img":"https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg"
+        "img":"./platillos/cabeza.webp"
     },
     {
         "id" :"5",
         "name": "Tacos de Maciza",
         "price": "$7 MXN",
-        "img":"https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg"
+        "img":"./platillos/maciza.webp"
     },
     {
         "id" :"6",
         "name": "Tacos de Tripa",
         "price": "$7 MXN",
-        "img":"https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg"
+        "img":"./platillos/tripa.webp"
     }],
     "tortas":[
     {
@@ -115,7 +115,7 @@
         "id" :"19",
         "name": "Hamburguesa",
         "price": "$30 MXN",
-        "img":""
+        "img":"./platillos/hamburgueza.webp"
     }
     ]
 }

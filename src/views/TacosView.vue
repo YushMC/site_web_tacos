@@ -3,7 +3,7 @@
         <section>
             <div class="blur_section">
                 <div class="content_image">
-                    <img src="../assets/img/Default_images_of_mexican_tacos_2.jpg" alt="Tacos Toño - Tacos">
+                    <img src="../../public/assets/gui/Default_images_of_mexican_tacos_2.jpg" alt="Tacos Toño - Tacos">
                     <div class="text_content">
                         <h2 class="titulos">Tacos</h2>
                     </div>

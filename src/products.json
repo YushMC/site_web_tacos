@@ -9,8 +9,8 @@
         "carne_4": "Pastor",
         "carne_5": "Chorizo",
         "price":"$7 MXN c/u y ordenes apartir de $50 MXN",
-        "img":"https://images.ctfassets.net/n7hs0hadu6ro/654h2ZLwHdqCGdZ8I2spTq/c5443bf99ecd8c54a18422456fce46a2/exquisitos-tacos-de-carnitas.jpg?w=1920&h=1280&fl=progressive&q=50&fm=jpg",
-        "link":"/tacos"
+        "img":"./assets/platillos/tacos.webp",
+        "link":"/menu/tacos"
     },
     {
         "id":"1",
@@ -22,8 +22,8 @@
         "carne_4": "Pastor",
         "carne_5": "Chorizo",
         "price":"$30 MXN",
-        "img":"https://www.maricruzavalos.com/wp-content/uploads/2023/04/torta-de-chorizo-recipe-500x375.jpg",
-        "link":"/tortas"
+        "img":"./assets/platillos/torta.webp",
+        "link":"/menu/tortas"
     },
     {
         "id":"2",
@@ -35,15 +35,15 @@
         "carne_4": "Pastor",
         "carne_5": "Chorizo",
         "price":"$15 MXN c/u",
-        "img":"https://i0.wp.com/lopezdoriga.com/wp-content/uploads/2017/08/gringaalpastor-e1503699292532.jpg",
-        "link":"/quesadillas"
+        "img":"./assets/platillos/quesadilla.webp",
+        "link":"/menu/quesadillas"
     },
     {
         "id":"3",
         "name":"Hamburguesas",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, assumenda accusamus. Earum architecto eaque esse! Blanditiis, rem minus. Ipsam facilis nostrum tempora similique maiores nihil dolorum quasi ratione, ad inventore?",
         "price":"$30 mxn",
-        "img":"https://images.aws.nestle.recipes/resized/8689e8d974203563ddcc9bbff91323c2_MG_CHORIZOBURGER_Main-880x660_1080_850.png",
-        "link":"/hamburguesas"
+        "img":"./assets/platillos/hamburgueza.webp",
+        "link":"/menu/hamburguesas"
     }
 ]

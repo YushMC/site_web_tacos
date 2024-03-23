@@ -7,7 +7,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in vero molestias sint voluptatibus. Commodi eligendi exercitationem earum ipsam aut?</p>
                 </div>
                 <div class="contenedor_portada_secciones " >
-                    <img src="../assets/img/2022_Pollo_Regio_August00208-Edit-1.png" alt="Imagen de portada tacos" >
+                    <img src="../../public/assets/gui/tacos2.png" alt="Imagen de portada tacos" >
                 </div>
             </div>
         </div>
@@ -25,7 +25,7 @@
     position: relative;
     background-size: cover;
     background-position: center;
-    background-image: url(../assets/img/Default_images_of_mexican_tacos_2.jpg);
+    background-image: url(../../public/assets/gui/Default_images_of_mexican_tacos_2.jpg);
     box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.5);
 }
 .difuminado_fondo{

@@ -22,27 +22,32 @@ const routes =  [
         component: InicioView
     },
     {
+        path: '/inicio',
+        name: 'inicio',
+        component: InicioView
+    },
+    {
         path: '/products',
         name:'products',
         component: ProductsView
     }
     ,
     {
-        path: '/tacos',
+        path: '/menu/tacos',
         name:'tacos',
         component: TacosView
     }
 ]
 const router = createRouter({
     history: createWebHistory(),
-    routes
-});
-/*
-,
+    routes,
+    
     scrollBehavior() {
-        return { top: 0, left: 0 }
-      }
-*/
+        window.scrollTo(0,0);
+        document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
+    }
+});
+
 router.beforeEach((to, from, next) => {
     AOS.init(); // Initialize AOS
     next();

@@ -2,57 +2,59 @@
 <html lang="es" data-theme="light">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="assets/431758661_122101438940242016_2417711652323493930_n-DJV4wXqT.ico" sizes="96x96">
+    <link rel="icon" type="image/x-icon" href="/assets/431758661_122101438940242016_2417711652323493930_n-DJV4wXqT.ico" sizes="96x96">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="application-name" content="TACOS TOÑO">
     <title>Tacos Toño</title>
-    <script type="module" crossorigin src="/assets/index-DIouWfjR.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-MEAU4Iu7.css">
+    <script type="module" crossorigin src="/assets/index-DZ34b_e6.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BdEz2d91.css">
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v19.0" nonce="W7Gvlx1J"></script>
     <div class="container-alll-modal" id="modal">
-      <div class="popup">
-          <div class="img">
-          </div>
-          <div class="container-text">
-              
-              <h3>Selecciona un color</h3>
-              <!-- 
-              <p>
-                  Solo da click en las imagenes!  
-              </p>
-              <div class="chibis">
-                  <div class="color">
-                      <button id="color-verde" onclick="colorSeleccionado('Monika')" ><img src="https://www.dokidokispanish.club/assets/chibis/m_sticker_1.png"></button>
-                  </div>
-                  <div class="color">
-                      <button id="color-rosa" onclick="colorSeleccionado('Natsuki')" ><img src="https://www.dokidokispanish.club/assets/chibis/n_sticker_1.png"></button>
-                  </div>
-                  <div class="color">
-                      <button id="color-azul" onclick="colorSeleccionado('Sayori')" ><img src="https://www.dokidokispanish.club/assets/chibis/s_sticker_1.png"></button>
-                  </div>
-                  <div class="color">
-                      <button id="color-morado" onclick="colorSeleccionado('Yuri')" ><img src="https://www.dokidokispanish.club/assets/chibis/y_sticker_1.png"></button>
-                  </div>
-                  
-              </div>
-              -->
-              <div class="modo-oscuro">
-                  <p>
-                  Selecciona el color de fondo 
-                  <br>
-                  <label class="switch-modos">
-                      <input type="checkbox" id="swicth-mode" >
-                      <span class="slider1"></span>
-                  </label>
-              </p>
-              </div>
-          </div>
-          <a href="#" class="btn-close-popup">X</a>
-      </div>
+        <div class="popup">
+            <div class="img">
+            </div>
+            <div class="container-text">
+                
+                <h3>Selecciona un color</h3>
+                <!-- 
+                <p>
+                    Solo da click en las imagenes!  
+                </p>
+                <div class="chibis">
+                    <div class="color">
+                        <button id="color-verde" onclick="colorSeleccionado('Monika')" ><img src="https://www.dokidokispanish.club/assets/chibis/m_sticker_1.png"></button>
+                    </div>
+                    <div class="color">
+                        <button id="color-rosa" onclick="colorSeleccionado('Natsuki')" ><img src="https://www.dokidokispanish.club/assets/chibis/n_sticker_1.png"></button>
+                    </div>
+                    <div class="color">
+                        <button id="color-azul" onclick="colorSeleccionado('Sayori')" ><img src="https://www.dokidokispanish.club/assets/chibis/s_sticker_1.png"></button>
+                    </div>
+                    <div class="color">
+                        <button id="color-morado" onclick="colorSeleccionado('Yuri')" ><img src="https://www.dokidokispanish.club/assets/chibis/y_sticker_1.png"></button>
+                    </div>
+                    
+                </div>
+                -->
+                <div class="modo-oscuro">
+                    <p>
+                    Selecciona el color de fondo 
+                    <br>
+                    <label class="switch-modos">
+                        <input type="checkbox" id="swicth-mode" >
+                        <span class="slider1"></span>
+                    </label>
+                </p>
+                </div>
+            </div>
+            <a href="#" class="btn-close-popup">X</a>
+        </div>
     </div>
-    <div id="app"></div>
 
+    <div id="app"></div>
   </body>
   <script src="https://kit.fontawesome.com/f54d272d6c.js" crossorigin="anonymous"></script>
   <script>
@@ -61,6 +63,7 @@
       header.classList.toggle("abajo_scroll",window.scrollY>0);
     });
   </script>
+  
   <script>
     const preferedColorScheme =  'light';
     const btnSwitch = document.querySelector('#swicth-mode');

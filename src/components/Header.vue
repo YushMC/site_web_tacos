@@ -1,25 +1,90 @@
 <script setup>
 import { RouterLink} from 'vue-router';
+import { ref, computed, watchEffect } from 'vue';
+import datos from "./../products.json";
+const clase1Activa = ref(false);
+const mostrarBuscador = ref(false);
 
+const mostrarBarra = ()=>{
+    mostrarBuscador.value = !mostrarBuscador.value;
+    searchQuery.value='';
+}
+const toggleClase = () => {
+    clase1Activa.value = !clase1Activa.value;
+    if(mostrarBuscador.value!=false){
+        mostrarBuscador.value = !mostrarBuscador.value;
+        searchQuery.value='';
+    }
+    
+};
+
+const searchQuery = ref('');
+
+/*
+watchEffect(()=>{
+    if(searchQuery.value=='') return;
+});
+*/
 </script>
 
 <template>
-    <header >
+    <header :class="{ 'abajo_scroll' : mostrarBuscador}"  >
         <div class="content_header" data-aos="fade-down" data-aos-duration="1000">
             <h1 class="titulos"><router-link to="/" style="color: #fff;">Tacos Toño</router-link></h1>
-            <nav>
+            <nav ref="menu" :class="{ 'togleMenu' : clase1Activa}">
                 <ul>
                     <li><router-link to="/"><i class="fa-solid fa-house"></i> Inicio</router-link></li>
-                    <li><router-link to="/products"><i class="fa-solid fa-shop"></i> Productos</router-link></li>
-                    <!-- <li><i title="Buscador" class="fa-solid fa-magnifying-glass" id="icon-search" style="cursor:pointer;"></i></li> -->
+                    <li @click="mostrarBarra"><i title="Buscador" class="fa-solid fa-magnifying-glass" style="cursor:pointer;"></i></li>
                 </ul>
             </nav>
+            <i class="fa-solid fa-bars" style="color: #fff;font-size:1.5em;" @click="toggleClase"></i>
         </div>
     </header>
-    
+    <div class="search" v-if="mostrarBuscador" :class="{ 'abajo_scroll' : mostrarBuscador}" data-aos="fade-down" data-aos-duration="1000">
+        <div class="content_search">
+            <input type="text" v-model="searchQuery" placeholder="¿Qué deseas buscar?">
+            <div class="resultados" v-if="searchQuery.length">
+                <router-link v-for="item in datos" :key="item.id" :to="item.link" class="resultado" @click="mostrarBarra"><i title="Buscador" class="fa-solid fa-magnifying-glass" style="cursor:pointer;"></i> {{item.name}}</router-link>
+            </div>
+        </div>
+    </div>
 </template>
 
 <style scoped>
+.search{
+    position: fixed;
+    z-index: 80;
+    top: 80px;
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    transition: all 0.5s linear;
+}
+.content_search{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    transition: all 0.5s linear;
+}
+.content_search input{
+    width: 100%;
+    height: 40px;
+}
+.resultados{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.resultado{
+    background-color: #f3f3f3af;
+    text-transform: uppercase;
+    padding: 2% 1%;
+    color: black !important;
+}
+.resultado:hover{
+    background-color: #f3f3f3;
+}
 header{
     display: flex;
     margin: auto;
@@ -89,6 +154,48 @@ nav ul li a{
 nav ul li:hover a{
     color: #fff;
     
+}
+.content_header > i{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    header{
+        background-color: var(--color_header);
+    }
+    .content_header > i{
+        display: block;
+        cursor: pointer;
+    }
+    .abajo_scroll{
+        box-shadow:none;
+    }
+    .content_header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40%;
+        transition: all 0.3s linear;
+    }
+    nav{
+        display: none;
+        width: 100%;
+        position: absolute;
+        top:80px;
+        background-color: var(--color_header);
+        backdrop-filter: blur(0.25rem);
+        transition: all 0.3s linear;
+        padding-bottom: 2%;
+    }
+    .search{
+        top: 126px;
+    }
+}
+.togleMenu{
+    transition: all 0.3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 </style>

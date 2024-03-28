@@ -2,7 +2,8 @@
     {
         "id":"0",
         "name":"Tacos",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, assumenda accusamus. Earum architecto eaque esse! Blanditiis, rem minus. Ipsam facilis nostrum tempora similique maiores nihil dolorum quasi ratione, ad inventore?",
+        "nameSearch" : "TACOS",
+        "description": "Deléitate con la exquisitez de unos auténticos tacos, una obra maestra culinaria de la cocina mexicana. Saborea la armonía de sabores y texturas en cada bocado: tortillas de maíz, rellenas de jugosa carne, acompañadas de cebolla fresca, cilantro y salsa, que despiertan tus sentidos con un festival de aromas y especias.",
         "carne_1": "Tripa",
         "carne_2": "Macisa",
         "carne_3": "Cabeza",
@@ -15,6 +16,7 @@
     {
         "id":"1",
         "name":"Tortas",
+        "nameSearch" : "TORTAS",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, assumenda accusamus. Earum architecto eaque esse! Blanditiis, rem minus. Ipsam facilis nostrum tempora similique maiores nihil dolorum quasi ratione, ad inventore?",
         "carne_1": "Tripa",
         "carne_2": "Macisa",
@@ -28,6 +30,7 @@
     {
         "id":"2",
         "name":"Quesadillas",
+        "nameSearch" : "QUESADILLAS",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, assumenda accusamus. Earum architecto eaque esse! Blanditiis, rem minus. Ipsam facilis nostrum tempora similique maiores nihil dolorum quasi ratione, ad inventore?",
         "carne_1": "Tripa",
         "carne_2": "Macisa",
@@ -41,6 +44,7 @@
     {
         "id":"3",
         "name":"Hamburguesas",
+        "nameSearch" : "HAMBURGUESAS",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, assumenda accusamus. Earum architecto eaque esse! Blanditiis, rem minus. Ipsam facilis nostrum tempora similique maiores nihil dolorum quasi ratione, ad inventore?",
         "price":"$30 mxn",
         "img":"./assets/platillos/hamburgueza.webp",

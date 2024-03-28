@@ -1,8 +1,10 @@
 import { createApp } from 'vue'
 import VueSweetalert2 from 'vue-sweetalert2';
 import InicioView from './views/InicioView.vue';
-import ProductsView from './views/ProductsView.vue';
 import TacosView from './views/TacosView.vue';
+import HamburguesasView from './views/HamburguesasView.vue';
+import QuesadillasView from './views/QuesadillasView.vue';
+import TortasView from './views/TortasView.vue';
 import { Swiper } from 'swiper/vue';
 import {createRouter, createWebHistory } from 'vue-router'
 import 'sweetalert2/dist/sweetalert2.min.css';
@@ -27,16 +29,28 @@ const routes =  [
         component: InicioView
     },
     {
-        path: '/products',
-        name:'products',
-        component: ProductsView
-    }
-    ,
-    {
         path: '/menu/tacos',
         name:'tacos',
         component: TacosView
+    },
+    {
+        path: '/menu/hamburguesas',
+        name:'hamburguesas',
+        component: HamburguesasView
     }
+    ,
+    {
+        path: '/menu/quesadillas',
+        name:'quesadillas',
+        component: QuesadillasView
+    }
+    ,
+    {
+        path: '/menu/tortas',
+        name:'tortas',
+        component: TortasView
+    }
+
 ]
 const router = createRouter({
     history: createWebHistory(),

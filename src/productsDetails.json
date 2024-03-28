@@ -4,118 +4,36 @@
         "id" :"1",
         "name": "Tacos de Chorizo",
         "price": "$7 MXN",
-        "img":"./platillos/chorizo.webp"
+        "img":"assets/platillos/chorizo.webp"
     },
     {
         "id" :"2",
         "name": "Tacos de Bisteck",
         "price": "$7 MXN",
-        "img":"./platillos/bisteck.webp"
+        "img":"assets/platillos/bisteck.webp"
     },
     {
         "id" :"3",
         "name": "Tacos de Pastor",
         "price": "$7 MXN",
-        "img":"./platillos/pastor.webp"
+        "img":"assets/platillos/pastor.webp"
     },
     {
         "id" :"4",
         "name": "Tacos de Cabeza",
         "price": "$7 MXN",
-        "img":"./platillos/cabeza.webp"
+        "img":"assets/platillos/cabeza.webp"
     },
     {
         "id" :"5",
         "name": "Tacos de Maciza",
         "price": "$7 MXN",
-        "img":"./platillos/maciza.webp"
+        "img":"assets/platillos/maciza.webp"
     },
     {
         "id" :"6",
         "name": "Tacos de Tripa",
         "price": "$7 MXN",
-        "img":"./platillos/tripa.webp"
-    }],
-    "tortas":[
-    {
-        "id" :"7",
-        "name": "Torta de Chorizo",
-        "price": "$30 MXN",
-        "img":""
-    },
-    {
-        "id" :"8",
-        "name": "Torta de Bistec",
-        "price": "$30 MXN",
-        "img":""
-    },
-    {
-        "id" :"9",
-        "name": "Torta de Pastor",
-        "price": "$30 MXN",
-        "img":""
-    },
-    {
-        "id" :"10",
-        "name": "Torta de Cabeza",
-        "price": "$30 MXN",
-        "img":""
-    },
-    {
-        "id" :"11",
-        "name": "Torta de Maciza",
-        "price": "$30 MXN",
-        "img":""
-    },
-    {
-        "id" :"12",
-        "name": "Torta de Tripa",
-        "price": "$30 MXN",
-        "img":""
-    }],
-    "quesadillas": [
-    {
-        "id" :"13",
-        "name": "Quesadilla de Chorizo",
-        "price": "$15 MXN",
-        "img":""
-    },
-    {
-        "id" :"14",
-        "name": "Quesadilla de Bistec",
-        "price": "$15 MXN",
-        "img":""
-    },
-    {
-        "id" :"15",
-        "name": "Quesadilla de Pastor",
-        "price": "$15 MXN",
-        "img":""
-    },
-    {
-        "id" :"16",
-        "name": "Quesadilla de Cabeza",
-        "price": "$15 MXN",
-        "img":""
-    },
-    {
-        "id" :"17",
-        "name": "Quesadilla de Maciza",
-        "price": "$15 MXN",
-        "img":""
-    },
-    {
-        "id" :"18",
-        "name": "Quesadilla de Tripa",
-        "price": "$15 MXN",
-        "img":""
-    }],
-    "hamburguesas": [
-    {
-        "id" :"19",
-        "name": "Hamburguesa",
-        "price": "$30 MXN",
-        "img":"./platillos/hamburgueza.webp"
-    }
-    ]
+        "img":"assets/platillos/tripa.webp"
+    }]
 }

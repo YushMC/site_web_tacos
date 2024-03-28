@@ -5,6 +5,7 @@
     <link rel="icon" type="image/x-icon" href="./public/icono.ico" sizes="96x96">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="application-name" content="TACOS TOÑO">
+    <base href="/">
     <title>Tacos Toño</title>
   </head>
   <body>
@@ -60,6 +61,8 @@
     window.addEventListener("scroll",function(){
       const header = document.querySelector("header");
       header.classList.toggle("abajo_scroll",window.scrollY>0);
+      const buscador = document.querySelector('.search');
+      buscador.classList.toggle("abajo_scroll",window.scrollY>0 );
     });
   </script>
   

@@ -196,7 +196,7 @@ const modules =  [Pagination, Autoplay];
 .swiper{
     border-radius: 10px !important;
     margin: auto;
-    width: 58em;
+    width: 50em;
     height: 300px;
     padding: 2%;
 }
@@ -217,7 +217,7 @@ const modules =  [Pagination, Autoplay];
     border: 4px solid var(--enfasis_transparente);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:1000px) {
     .swiper{
         width:20em;
         height: 7em;

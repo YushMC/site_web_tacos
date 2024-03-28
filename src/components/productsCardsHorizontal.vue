@@ -7,7 +7,7 @@
                 </div>
                 <div class="info_content">
                     <h4 class="titulos">{{todo.name}}</h4>
-                    <p class="parrafo">{{todo.description}}</p>
+                    <p class="parrafo" style="white-space: pre-wrap;">{{todo.description}}</p>
                     <hr>
                     <div class="content_ingredient_card" v-if=" todo.name != 'Hamburguesas' ">
                         <span>{{ todo.carne_1}}</span>
@@ -26,7 +26,6 @@
 <script setup>
 import datos from "../products.json";
 import { RouterLink } from 'vue-router'; 
-import { ref, computed  } from 'vue';
 
 const datosProductos = datos;
 
@@ -42,6 +41,12 @@ a{
 }
 a .titulos{
     color:#000;
+}
+@media screen and (max-width: 600px) {
+    a{
+        display: flex;
+        flex-direction: column;
+    }
 }
 img{
     border-radius: 10px;

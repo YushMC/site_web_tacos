@@ -3,15 +3,15 @@
         <section>
             <div class="blur_section">
                 <div class="content_image">
-                    <img :src="datosProductos.img" alt="Tacos Toño - Tacos">
+                    <img :src="imgenPortada" :alt="altImagen">
                     <div class="text_content">
-                        <h2 class="titulos">Tacos</h2>
+                        <h2 class="titulos">{{datosProductos.name}}</h2>
                     </div>
                 </div>
                 
 
                 <div class="content_section" data-aos="fade-down" data-aos-duration="1000">
-                    <h2 class="titulos enfasis titulo_seccion">Tacos</h2>
+                    <h2 class="titulos enfasis titulo_seccion">{{datosProductos.name}}</h2>
                     <p class="parrafos button">
                         {{ datosProductos.description }}
                     </p>
@@ -30,25 +30,8 @@
                         <li class="button">Pastor</li>
                         <li class="button">Chorizo</li>
                     </ul>
-                    <swiper-container >
-                        <swiper
-                        :pagination="true"
-                        :modules="modules"
-                        :autoplay="true"
-                        :centered-slides="true"
-                        :mousewheel="true"
-                        :keyboard="true"
-                        :slidesPerView="3"
-                        :spaceBetween="23"
-                        :loop="true"
-                         >
-                            <swiper-slide v-for="todo in imagenProducts" :key="todo.id">
-                                <router-link to="/menu/tacos" ><img  :src="todo.img" :alt="todo.name"></router-link>
-                            </swiper-slide>
-
-                        </swiper>
-                    </swiper-container>
-                    <h4>
+                    <img :src="imgenPortada" :alt="altImagen">
+                    <h4 >
                         Precio: {{datosProductos.price}}
                     </h4>
                 </div>
@@ -59,22 +42,13 @@
 
 <script setup>
     document.title = "Tacos Toño - Tacos";
-    
-    import 'swiper/swiper-bundle.css';
-    import { RouterLink} from 'vue-router';
-    import { Pagination,Autoplay } from 'swiper/modules';
-    import { Swiper, SwiperSlide} from 'swiper/vue';
     import datos from "./../products.json";
-    import detalles from "./../productsDetails.json";
-    // Import Swiper styles
-    import 'swiper/css';
-    import 'swiper/css/pagination';
-    const datosProductos = datos[0];
-
-    const imagenProducts = detalles["tacos"];
+    const datosProductos = datos[2];
 
 
-const modules =  [Pagination, Autoplay];
+    const imgenPortada = datosProductos.img;
+    const altImagen = datosProductos.name;
+
 </script>
 
 <style scoped>
@@ -127,7 +101,7 @@ const modules =  [Pagination, Autoplay];
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 .parrafos{
-    width: 80%;
+    width: 50%;
     margin: 1% auto;
     padding: 1%;
 }
@@ -150,6 +124,12 @@ li{
     padding: 1%;
     margin: 1%;
 }
+.content_section img{
+    margin-top: 2%;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px black;
+}
 .button{
     background-color: var(--enfasis_transparente);
     border-radius: 10px
@@ -161,17 +141,6 @@ li{
     }
     .blur_section{
         padding-top: 100px;
-    }
-}
-@media screen and (max-width: 600px) {
-    h4{
-        font-size: 1em;
-        text-align: center;
-    }
-}
-@media screen and (max-width: 400px) {
-    .swiper{
-        width: 16em;
     }
 }
 </style>

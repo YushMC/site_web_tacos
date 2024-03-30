@@ -39,10 +39,10 @@
 }
 
 .popup .img{
-    width: 40%;
-    background-image: url("./../../public/assets/img/Default_images_of_mexican_tacos_2.jpg");
+    width: 60%;
+    background-image: url("./../../public/icono.ico");
     background-size: cover;
-    background-position:  80%;
+    background-position:  50%;
     border-radius: 10px;
 }
 
@@ -234,7 +234,7 @@ input:checked + .slider1:before {
     .popup .img{
         width: 100%;
         height: 40%;
-        
+        background-position: center;
     }
 
     .popup .container-text{

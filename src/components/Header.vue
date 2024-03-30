@@ -30,14 +30,14 @@ watchEffect(()=>{
 <template>
     <header :class="{ 'abajo_scroll' : mostrarBuscador}"  >
         <div class="content_header" data-aos="fade-down" data-aos-duration="1000">
-            <h1 class="titulos"><router-link to="/" style="color: #fff;">Tacos Toño</router-link></h1>
+            <h1 class="titulos"><router-link to="/" style="color: #fff;" title="Ir al inicio">Tacos Toño</router-link></h1>
             <nav ref="menu" :class="{ 'togleMenu' : clase1Activa}">
                 <ul>
-                    <li><router-link to="/"><i class="fa-solid fa-house"></i> Inicio</router-link></li>
+                    <li><router-link to="/" title="Ir al inicio"><i class="fa-solid fa-house"></i> Inicio</router-link></li>
                     <li @click="mostrarBarra"><i title="Buscador" class="fa-solid fa-magnifying-glass" style="cursor:pointer;"></i></li>
                 </ul>
             </nav>
-            <i class="fa-solid fa-bars" style="color: #fff;font-size:1.5em;" @click="toggleClase"></i>
+            <i title="Buscar" class="fa-solid fa-bars" style="color: #fff;font-size:1.5em;" @click="toggleClase"></i>
         </div>
     </header>
     <div class="search" v-if="mostrarBuscador" :class="{ 'abajo_scroll' : mostrarBuscador}" data-aos="fade-down" data-aos-duration="1000">

@@ -4,7 +4,7 @@
             <section class="sections_footer">
                 <div class="section_footer">
                     <img src="../../public/icono.ico" alt="">
-                    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, obcaecati tempore natus perferendis iure blanditiis modi magnam nostrum ab culpa?</p>
+                    <p class="parrafo">En Tacos Toño, valoramos la variedad y la calidad en nuestra comida. Nuestro menú, repleto de auténticas delicias mexicanas, promete deleitar a todos los gustos. Estamos en una locación cómoda y acogedora, siempre nos aseguramos de mantener una higiene y una limpieza impecable para garantizar que cada plato que servimos esté fresco y con nuestro sabor característico. ¡Ven y déjate sorprender por la magia de la cocina mexicana en Tacos Toño</p>
                 </div>
                 <div class="section_footer">
                     <h3 class="subitulos"><i class="fa-solid fa-clock"></i> Horario</h3>
@@ -21,7 +21,7 @@
                 </div>
             </section>
             <hr>
-            <div>
+            <div class="empresa">
                 <h1 class="titulos">Tacos Toño @2024</h1>
             </div>
         </div>
@@ -68,8 +68,10 @@
     }
     .section_footer{
         width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
+        margin: auto;
     }
     .section_footer:last-child{
         text-align:right;
@@ -79,7 +81,11 @@
     .section_footer:first-child{
         justify-content: center;
         align-items: center;
+        text-align: justify;
     } 
+    .section_footer:nth-child(2){
+        margin-top: 8%;
+    }
     ul{
         width: 90%;
         margin-top: -3%;
@@ -89,7 +95,7 @@
     }
     iframe{
         width: 100%;
-        height: 200px;
+        height: 250px;
         border-radius: 10px;
         outline: none;
     }
@@ -118,6 +124,23 @@
         }
         .subitulos{
             text-align: center;
+        }
+        iframe{
+            height: 200px;
+            margin-bottom: 12%;
+        }
+        .section_footer:nth-child(2){
+            margin-top: 0%;
+        }
+        .titulos{
+            font-size: 1.5em;
+            padding-top: 1%;
+        }
+        .empresa{
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+            background-color: var(--enfasis);
         }
     }
 </style>

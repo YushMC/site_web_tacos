@@ -3,11 +3,14 @@
         <div class="difuminado_fondo">
             <div class="contenedor_portada"  data-aos="fade-down" data-aos-duration="1000">
                 <div class="contenedor_portada_secciones">
-                    <h2 class="titulos">¡Sabor <span style="color:#26f141;">auténtico</span> en cada bocado!</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in vero molestias sint voluptatibus. Commodi eligendi exercitationem earum ipsam aut?</p>
+                    <div>
+                        <h2 class="titulos">¡Sabor <span style="color:#26f141;">auténtico</span> en cada bocado!</h2>
+                        <p>¡Descubre el auténtico sabor de México en nuestra taquería! Deléitate con una explosión de sabores tradicionales en cada platillo.<br><br> <span style="color: #fec067;font-size:1.42em; text-align:justify;">¡Tu viaje culinario comienza aquí!</span></p>
+                    </div>
+                    
                 </div>
                 <div class="contenedor_portada_secciones " >
-                    <img src="../../public/assets/gui/tacos2.png" alt="Imagen de portada tacos" >
+                    <img src="../../public/icono.ico" alt="Imagen de portada tacos" >
                 </div>
             </div>
         </div>
@@ -25,13 +28,13 @@
     position: relative;
     background-size: cover;
     background-position: center;
-    background-image: url(../../public/assets/gui/Default_images_of_mexican_tacos_2.jpg);
+    background-image: url(../../public/assets/platillos/tacos.webp);
     box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.5);
 }
 .difuminado_fondo{
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(0.5rem);
+    backdrop-filter: blur(0.15rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,11 +57,23 @@
     flex-direction: column;
     justify-content: center;
     user-select: none;
+    
+}
+.contenedor_portada_secciones div{
+    padding: 2%;
+    transition: all 0.3s linear;
+    border-radius: 10px;
+}
+.contenedor_portada_secciones:first-child:hover div{
+    transition: all 0.3s linear;
+    background-color: rgba(128, 128, 128, 0.5);
 }
 .contenedor_portada_secciones img{
-    width: 100%;
+    border-radius: 100%;
+    width: 50%;
     filter: drop-shadow(5px 5px 15px black);
     transition: all 0.8s linear;
+    margin: auto;
 }
 .contenedor_portada_secciones img:hover{
     transform: scale(1.15);
@@ -73,7 +88,7 @@
     width: 70%;
     list-style: 1.5;
     text-align: left;
-    font-weight: 400;
+    font-weight: 600;
 }
 @media screen and (max-width:600px) {
     .contenedor_portada_secciones:nth-child(2){

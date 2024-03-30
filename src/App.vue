@@ -3,7 +3,6 @@ import {RouterView } from 'vue-router';
 import Header from './components/Header.vue';
 import BotonFlotante from './components/BotonFlotante.vue';
 import Footer from './components/Footer.vue';
-
 // Función para ir al inicio de la página
 
 </script>

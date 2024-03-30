@@ -1,7 +1,7 @@
 <template>
     <div class="horizontal_cards_content">
         <div class="horizontal_card" data-aos="fade-down" data-aos-duration="1000" v-for="todo in datosProductos" :key="todo.id" >
-            <router-link :to="todo.link">
+            <router-link :to="todo.link" :title="'Ver detalles de: ' + todo.name">
                 <div class="img_content">
                     <img :src="todo.img" :alt="todo.name + ' Imagen'">
                 </div>

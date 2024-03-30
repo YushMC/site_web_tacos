@@ -2,14 +2,14 @@
     <div class="container-buttons-float">
         <input type="checkbox" name="" id="btn-mas" style="cursor: pointer;">
        <div class="funciones">
-            <a href="#modal"><i class="fa-solid fa-brush"></i></a>
+            <a href="#modal" title="Color/Tema"><i class="fa-solid fa-brush"></i></a>
             <a @click="irA(urlFacebook,facebook)" title="Página Oficial en Facebook"><i class="fa-brands fa-facebook"></i></a>
             <a @click="irA(urlWhatsapp,whatsapp)" title="Chat de Whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             <a title="Télefono" @click="copiarContenido"><i class="fa-solid fa-phone"></i></a>
             <!-- a href="#" title="Correo Electrónico" target="_blank"><i class="fa-solid fa-envelope"></i></a -->
         </div>
        <div class="btn-mas" style="cursor: pointer;">
-           <label for="btn-mas" title="Mostrar/Ocultar"><i class="fa-solid fa-plus" style="cursor: pointer; margin-top:25%;"></i></label>
+           <label for="btn-mas" title="Más Opciones"><i class="fa-solid fa-plus" style="cursor: pointer; margin-top:25%;"></i></label>
        </div>
    </div>
 </template>

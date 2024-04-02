@@ -2,11 +2,13 @@
     <div class="container-buttons-float">
         <input type="checkbox" name="" id="btn-mas" style="cursor: pointer;">
        <div class="funciones">
+            <a target="_blank" href="./../../public/assets/Menu_Tacos_Tono.pdf" @click=" " title="Descargar menu"><i class="fa-solid fa-file-arrow-down"></i></a>
             <a href="#modal" title="Color/Tema"><i class="fa-solid fa-brush"></i></a>
             <a @click="irA(urlFacebook,facebook)" title="Página Oficial en Facebook"><i class="fa-brands fa-facebook"></i></a>
             <a @click="irA(urlWhatsapp,whatsapp)" title="Chat de Whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             <a title="Télefono" @click="copiarContenido"><i class="fa-solid fa-phone"></i></a>
             <!-- a href="#" title="Correo Electrónico" target="_blank"><i class="fa-solid fa-envelope"></i></a -->
+
         </div>
        <div class="btn-mas" style="cursor: pointer;">
            <label for="btn-mas" title="Más Opciones"><i class="fa-solid fa-plus" style="cursor: pointer; margin-top:25%;"></i></label>
@@ -14,9 +16,13 @@
    </div>
 </template>
 
+
+
 <script setup>
 import Swal from 'sweetalert2'
+
 const telefono = "4641384565";
+
 async function copiarContenido() {
   try {
     await navigator.clipboard.writeText(telefono);
@@ -37,10 +43,20 @@ async function copiarContenido() {
   }
 }
 
+const notificacionMenu = ()=>{
+    Swal.fire({
+        position: 'center',
+        icon: "success",
+        title: "Menu descargado correctamente"
+    });
+}
+
 const facebook = "nuestra página en Facebook";
 const urlFacebook = "https://web.facebook.com/profile.php?id=61557260492467&mibextid=ZbWKwL&_rdc=1&_rdr";
 const whatsapp = "nuestro chat de Whatsapp";
 const urlWhatsapp = "https://www.whatsapp.com/";
+
+
 
 function irA(link,text){
     Swal.fire({

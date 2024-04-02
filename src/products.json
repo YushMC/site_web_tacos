@@ -31,7 +31,7 @@
         "id":"2",
         "name":"Quesadillas",
         "nameSearch" : "QUESADILLAS",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, assumenda accusamus. Earum architecto eaque esse! Blanditiis, rem minus. Ipsam facilis nostrum tempora similique maiores nihil dolorum quasi ratione, ad inventore?",
+        "description": "Deléitate con nuestras exquisitas quesadillas, un festín de sabores mexicanos que deleitarán tu paladar. Rellenas de queso derretido y tu elección de carne. Cada bocado es una explosión de auténtico sabor que te transportará directamente a las calles de México. ¡Disfrútalas ahora!",
         "carne_1": "Tripa",
         "carne_2": "Macisa",
         "carne_3": "Cabeza",
@@ -45,7 +45,7 @@
         "id":"3",
         "name":"Hamburguesas",
         "nameSearch" : "HAMBURGUESAS",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, assumenda accusamus. Earum architecto eaque esse! Blanditiis, rem minus. Ipsam facilis nostrum tempora similique maiores nihil dolorum quasi ratione, ad inventore?",
+        "description": "Deléitate con nuestras hamburguesas artesanales, jugosas y llenas de sabor. Hechas con ingredientes frescos y de la más alta calidad, nuestras hamburguesas son una explosión de sabores en cada bocado. Satisfacemos todos los antojos. Descubre el placer de una hamburguesa perfecta con nosotros.",
         "price":"$30 mxn",
         "img":"./assets/platillos/hamburgueza.webp",
         "link":"/menu/hamburguesas"

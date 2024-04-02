@@ -18,7 +18,6 @@ const toggleClase = () => {
     
 };
 
-
 const searchQuery = ref('');
 
 /*

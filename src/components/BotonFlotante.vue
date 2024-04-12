@@ -2,7 +2,7 @@
     <div class="container-buttons-float">
         <input type="checkbox" name="" id="btn-mas" style="cursor: pointer;">
        <div class="funciones">
-            <a target="_blank" href="./../../public/assets/Menu_Tacos_Tono.pdf" @click=" " title="Descargar menu"><i class="fa-solid fa-file-arrow-down"></i></a>
+            <a target="_blank" href="./../../assets/Menu_Tacos_Tono.pdf" @click=" " title="Descargar menu"><i class="fa-solid fa-file-arrow-down"></i></a>
             <a href="#modal" title="Color/Tema"><i class="fa-solid fa-brush"></i></a>
             <a @click="irA(urlFacebook,facebook)" title="Página Oficial en Facebook"><i class="fa-brands fa-facebook"></i></a>
             <a @click="irA(urlWhatsapp,whatsapp)" title="Chat de Whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>

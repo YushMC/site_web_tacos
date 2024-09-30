@@ -8,6 +8,7 @@ import TortasView from './views/TortasView.vue';
 import { Swiper } from 'swiper/vue';
 import {createRouter, createWebHistory } from 'vue-router'
 import 'sweetalert2/dist/sweetalert2.min.css';
+import VueGtag from 'vue-gtag'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -71,6 +72,9 @@ const app = createApp(App)
 app.use(router)
 app.use(AOS)
 app.use(Swiper)
+app.use(VueGtag,{
+    config: {id:'G-F2CPECDC1E'}
+},router)
 app.use(VueSweetalert2)
 app.mount('#app')
 

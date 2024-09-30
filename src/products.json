@@ -9,7 +9,7 @@
         "carne_3": "Cabeza",
         "carne_4": "Pastor",
         "carne_5": "Chorizo",
-        "price":"$7 MXN c/u y ordenes apartir de $50 MXN",
+        "price":"$8 MXN c/u y ordenes apartir de $60 MXN",
         "img":"./assets/platillos/tacos.webp",
         "link":"/menu/tacos"
     },
@@ -23,7 +23,7 @@
         "carne_3": "Cabeza",
         "carne_4": "Pastor",
         "carne_5": "Chorizo",
-        "price":"$30 MXN",
+        "price":"$35 MXN",
         "img":"./assets/platillos/torta.webp",
         "link":"/menu/tortas"
     },
@@ -37,7 +37,7 @@
         "carne_3": "Cabeza",
         "carne_4": "Pastor",
         "carne_5": "Chorizo",
-        "price":"$15 MXN c/u",
+        "price":"$20 MXN c/u",
         "img":"./assets/platillos/quesadilla.webp",
         "link":"/menu/quesadillas"
     },
@@ -46,7 +46,7 @@
         "name":"Hamburguesas",
         "nameSearch" : "HAMBURGUESAS",
         "description": "Deléitate con nuestras hamburguesas artesanales, jugosas y llenas de sabor. Hechas con ingredientes frescos y de la más alta calidad, nuestras hamburguesas son una explosión de sabores en cada bocado. Satisfacemos todos los antojos. Descubre el placer de una hamburguesa perfecta con nosotros.",
-        "price":"$30 mxn",
+        "price":"$35 mxn",
         "img":"./assets/platillos/hamburgueza.webp",
         "link":"/menu/hamburguesas"
     }
